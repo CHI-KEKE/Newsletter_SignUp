@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Roboto+Mono:ital,wght@0,400;0,500;1,300;1,400&display=swap');
+:root {
+    --color-body:#9BA4B5;
+    --color-heading:#F1F6F9;
+    --color-base:#394867;
+    --color-base2:#212A3E;
+    --color-brand:#f1ecce;
+    --color-brand2:#b89e97;
+    --sidbar-width:240px;
+    --font-base:'Caveat', cursive;
+}
+
+body {
+    background-color: var(--color-base2);
+    color: var(--color-body);
+    font-family: var(--font-base), sans-serif;
+}
+
+
+.full-height{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(255,255,255,0.2);
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--color-brand2);
+    font-weight: 700;
+}
+
+.text-brand{
+    color: var(--color-brand);
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+    font-family: 'Roboto Mono', monospace;
+}
+
+a:hover{
+    color: var(--color-brand);
+}
+
+
+p{
+    font-weight: 900;
+}
+
+
+/* BTN */
+.btn{
+    padding: 12px 28px;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.btn-brand{
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+}
+
+.btn-brand:hover{
+    background-color: var(--color-brand2);
+    color: var(--color-base);
+    border-color: var(--color-brand2);
+}
+
+#contact{
+    position: relative;
+    
+}
+
+img{
+    align-self: center;
+}
+
+#contact .form-control{
+    background-color: var(--color-base);
+    border-color: var(--color-base);
+    color: var(--color-body);
+}
+
+#contact .form-control:hover{
+    border-color: var(--color-brand);
+    box-shadow: none;
+}
+
+#contact .form-control::placeholder{
+    color: var(--color-body);
+}
+
+#contact input.form-control{
+    height: 44px;
+}
+
+
+
